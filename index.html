@@ -66,168 +66,119 @@
         </div>
     </nav>
 
-    <!-- Modern Split Hero Section -->
-    <section id="home" class="modern-hero d-flex align-items-center position-relative overflow-hidden">
-        <div class="glow-orb orb-1"></div>
-        <div class="glow-orb orb-2"></div>
+    <!-- Modern Startup Hero Section -->
+    <section id="home" class="startup-hero d-flex align-items-center position-relative overflow-hidden bg-white">
+        <!-- Subtle gradient background patches to match screenshot -->
+        <div class="position-absolute top-0 start-0 translate-middle rounded-circle"
+            style="width: 800px; height: 800px; background: radial-gradient(circle, rgba(37,211,102,0.06) 0%, rgba(255,255,255,0) 70%); z-index: 0;">
+        </div>
+        <div class="position-absolute bottom-0 end-0 translate-middle-y rounded-circle"
+            style="width: 1000px; height: 1000px; background: radial-gradient(circle, rgba(37,211,102,0.06) 0%, rgba(255,255,255,0) 70%); z-index: 0;">
+        </div>
 
-        <div class="container z-1">
+        <div class="container z-1 position-relative">
             <div class="row align-items-center min-vh-100 pt-5 pt-lg-0">
 
                 <!-- Hero Content (Left) -->
-                <div class="col-lg-6 hero-text-area text-center text-lg-start" data-aos="fade-right"
+                <div class="col-lg-6 hero-text-area text-center text-lg-start pe-lg-5" data-aos="fade-right"
                     data-aos-duration="1200">
-                    <div class="d-inline-flex align-items-center glass-badge mb-4 px-3 py-2 rounded-pill">
-                        <span class="pulse-dot me-2"></span>
-                        <span class="small fw-semibold text-white">Accepting New Service Clients</span>
-                    </div>
-
-                    <h1 class="display-4 fw-bolder mb-4 text-white hero-title lh-sm">
-                        Get Found. Get Trusted.<br>
-                        <span class="text-gradient">Get More Leads.</span>
+                    <h1 class="display-4 fw-bolder mb-4 text-dark-main lh-sm font-outfit"
+                        style="letter-spacing: -1px; font-weight: 800 !important;">
+                        Turn Local Searches<br>
+                        Into High-Paying <span class="text-primary">Clients</span><br>
+                        Instantly.
                     </h1>
 
-                    <p class="fs-4 text-white-50 mb-5 max-w-lg mx-auto mx-lg-0 fw-light">
-                        We turn Google searches into real business opportunities.
+                    <p class="fs-5 text-muted mb-5 max-w-lg mx-auto mx-lg-0 fw-light lh-base pe-lg-4">
+                        Stop losing customers to your competitors. We engineer high-converting digital growth ecosystems
+                        that rank you #1 and generate exclusive, ready-to-buy leads on pure autopilot.
                     </p>
 
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                    <div
+                        class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start mb-5 pb-3">
                         <button
-                            class="btn btn-gradient rounded-pill px-5 py-3 fw-semibold shadow-lg d-flex align-items-center justify-content-center"
+                            class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-sm d-flex align-items-center justify-content-center"
                             data-bs-toggle="modal" data-bs-target="#quoteModal">
-                            Get Your Free Growth Audit <i class="bi bi-arrow-right ms-2 mt-1"></i>
+                            Get Free Audit <i class="bi bi-arrow-right ms-2 fs-6"></i>
                         </button>
                         <a href="#digital-presence"
-                            class="btn btn-outline-light rounded-pill px-5 py-3 fw-semibold shadow-sm d-flex align-items-center justify-content-center mt-3 mt-sm-0">
-                            Explore Services
+                            class="btn btn-outline-primary rounded-pill px-5 py-3 fw-bold shadow-sm d-flex align-items-center justify-content-center bg-white border border-primary">
+                            How It Work? <i class="bi bi-arrow-right ms-2 fs-6"></i>
                         </a>
                     </div>
+
+
                 </div>
 
-                <!-- Hero UI Cluster (Right) -->
-                <div class="col-lg-6 d-none d-lg-block position-relative" data-aos="zoom-in-up" data-aos-duration="1500"
-                    data-aos-delay="200">
+                <!-- Hero Image & Elements (Right) -->
+                <div class="col-lg-6 d-none d-lg-block position-relative mt-5 mt-lg-0 pb-5" data-aos="zoom-in-up"
+                    data-aos-duration="1500" data-aos-delay="200">
+                    <div class="position-relative mx-auto ms-lg-auto me-lg-0"
+                        style="max-width: 450px; margin-top: 30px;">
 
-                    <div class="position-relative float-animation" style="height: 500px; perspective: 1000px;">
+                        <!-- Main Image -->
+                        <div class="rounded-5 overflow-hidden shadow-2xl position-relative"
+                            style="border-radius: 40px !important;">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&auto=format&fit=crop"
+                                class="w-100 img-fluid" style="object-fit: cover; height: 550px;"
+                                alt="Digital Growth Expert">
+                        </div>
 
-                        <!-- Main Dashboard Glass Card -->
-                        <div class="glass-card shadow-2xl rounded-5 p-4 p-xl-5 position-absolute z-1"
-                            style="width: 100%; height: 420px; top: 40px; left: 0; background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.15); box-shadow: 0 25px 50px rgba(0,0,0,0.2);">
+                        <!-- Floating Badges / Icons -->
 
-                            <!-- Mock UI Header -->
-                            <div
-                                class="d-flex justify-content-between align-items-center mb-4 border-bottom border-light border-opacity-10 pb-3">
-                                <div class="d-flex align-items-center">
-                                    <div class="bg-primary bg-opacity-25 p-2 rounded-circle me-3 d-flex align-items-center justify-content-center"
-                                        style="width: 45px; height: 45px;">
-                                        <i class="bi bi-google text-white fs-5"></i>
-                                    </div>
-                                    <div>
-                                        <h6 class="text-white mb-0 fw-bold fs-5">Campaign Tracker</h6>
-                                        <small class="text-white-50">Local SEO & Ads</small>
-                                    </div>
-                                </div>
-                                <div
-                                    class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-25 px-3 py-2 rounded-pill d-flex align-items-center shadow-sm">
-                                    <span class="pulse-dot me-2"
-                                        style="background-color: #25D366; width:6px; height:6px;"></span> Active
-                                </div>
+                        <!-- Top Left G Logo -->
+                        <div class="position-absolute bg-white rounded-circle shadow-lg d-flex justify-content-center align-items-center border border-light z-2"
+                            style="width: 45px; height: 45px; top: -15px; left: 10%; animation: floating 5s ease-in-out infinite;">
+                            <span class="fw-bolder fs-4 text-primary" style="font-family: 'Inter', sans-serif;">G</span>
+                        </div>
+
+                        <!-- Top Right Ranking Badge -->
+                        <div class="position-absolute bg-white rounded-pill shadow-lg d-flex align-items-center p-2 pe-3 border border-light z-2"
+                            style="top: 30px; right: -35px; animation: floating 6s ease-in-out infinite reverse;">
+                            <div class="me-2 overflow-hidden rounded-circle bg-light"
+                                style="width: 30px; height: 30px;">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop"
+                                    class="w-100 h-100" style="object-fit: cover;" alt="avatar">
                             </div>
-
-                            <!-- Mock Body - Stats Grid -->
-                            <div class="row g-3 mb-4">
-                                <div class="col-6">
-                                    <div class="bg-dark border border-white border-opacity-10 rounded-4 p-3 hover-lift transition-all"
-                                        style="background: rgba(0,0,0,0.2) !important;">
-                                        <div class="text-white-50 small mb-1 fw-bold text-uppercase"
-                                            style="letter-spacing: 0.5px; font-size: 0.7rem;">Impressions</div>
-                                        <h3 class="text-white fw-bolder mb-2 font-outfit">124k</h3>
-                                        <div class="text-primary-light small fw-bold d-flex align-items-center"><i
-                                                class="bi bi-graph-up-arrow me-1"></i> +45.8%</div>
-                                    </div>
+                            <div class="me-2 pe-1">
+                                <div class="fw-bold text-dark-main lh-1 mb-1" style="font-size: 0.75rem;">Ranked #1
                                 </div>
-                                <div class="col-6">
-                                    <div class="bg-dark border border-white border-opacity-10 rounded-4 p-3 hover-lift transition-all"
-                                        style="background: rgba(0,0,0,0.2) !important;">
-                                        <div class="text-white-50 small mb-1 fw-bold text-uppercase"
-                                            style="letter-spacing: 0.5px; font-size: 0.7rem;">Qualified Leads</div>
-                                        <h3 class="text-white fw-bolder mb-2 font-outfit">342</h3>
-                                        <div class="text-primary-light small fw-bold d-flex align-items-center"><i
-                                                class="bi bi-graph-up-arrow me-1"></i> +12.4%</div>
-                                    </div>
-                                </div>
+                                <div class="text-primary lh-1" style="font-size: 0.6rem; font-weight: 600;">Local SEO
+                                    Specialist</div>
                             </div>
-
-                            <!-- Mock Bar Chart -->
-                            <div class="mt-4">
-                                <div class="d-flex align-items-end justify-content-between px-2 gap-2"
-                                    style="height: 100px;">
-                                    <div class="bg-primary rounded-top w-100 opacity-50" style="height: 30%;"></div>
-                                    <div class="bg-primary rounded-top w-100 opacity-75" style="height: 50%;"></div>
-                                    <div class="bg-primary rounded-top w-100 opacity-50" style="height: 40%;"></div>
-                                    <div class="bg-primary-light rounded-top w-100 position-relative"
-                                        style="height: 80%; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);">
-                                        <div class="position-absolute top-0 start-50 translate-middle text-white fw-bold small badge bg-dark opacity-100 shadow-sm"
-                                            style="margin-top: -15px;">Peak</div>
-                                    </div>
-                                    <div class="bg-primary rounded-top w-100 opacity-75" style="height: 60%;"></div>
-                                    <div class="bg-primary rounded-top w-100 opacity-50" style="height: 90%;"></div>
-                                    <div class="bg-primary-light rounded-top w-100"
-                                        style="height: 100%; box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);"></div>
-                                </div>
-                                <div class="border-top border-light border-opacity-10 mt-1 pt-2 d-flex justify-content-between text-white-50 fw-medium font-monospace"
-                                    style="font-size: 0.7rem;">
-                                    <span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span>
-                                </div>
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center text-white"
+                                style="width: 18px; height: 18px;">
+                                <i class="bi bi-check" style="font-size: 0.9rem;"></i>
                             </div>
                         </div>
 
-                        <!-- Floating Detail Cards -->
-                        <div class="glass-card shadow-lg p-3 px-4 rounded-4 position-absolute z-3"
-                            style="top: 0px; right: -20px; animation: floating 5s ease-in-out infinite reverse; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15);">
-                            <div class="d-flex align-items-center">
-                                <div class="bg-white bg-opacity-25 p-2 rounded-circle me-3"><i
-                                        class="bi bi-geo-alt-fill text-white fs-4"></i></div>
-                                <div>
-                                    <h6 class="mb-0 text-white fw-bold fs-5">Rank #1</h6><small
-                                        class="text-white-50">Local Maps SEO</small>
-                                </div>
+                        <!-- Bottom Left Toggle Card -->
+                        <div class="position-absolute bg-white rounded-pill shadow-lg d-flex align-items-center p-2 px-3 border border-light gap-3 z-2 float-animation"
+                            style="bottom: 80px; left: -40px; animation-duration: 4s;">
+                            <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center text-white"
+                                style="width: 28px; height: 28px;">
+                                <i class="bi bi-hand-thumbs-up-fill" style="font-size: 0.8rem;"></i>
                             </div>
+                            <div class="bg-success rounded-pill d-block" style="width: 15px; height: 4px;"></div>
                         </div>
 
-                        <div class="glass-card shadow-lg p-3 px-4 rounded-4 position-absolute z-3 border-start border-warning border-4"
-                            style="bottom: 20px; left: -30px; animation: floating 7s ease-in-out infinite; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15);">
-                            <div class="d-flex align-items-center">
-                                <div class="text-warning me-3"><i class="bi bi-star-fill fs-1"></i></div>
-                                <div>
-                                    <h6 class="mb-0 text-white fw-bold fs-5">4.9/5 Rating</h6>
-                                    <small class="text-white-50">214+ Client Reviews</small>
-                                </div>
-                            </div>
+                        <!-- Bottom Right Floating Notification/Star -->
+                        <div class="position-absolute bg-primary rounded-circle shadow-lg d-flex justify-content-center align-items-center text-white z-2 float-animation"
+                            style="width: 45px; height: 45px; bottom: 120px; right: -15px; animation-duration: 5.5s; border: 3px solid white;">
+                            <i class="bi bi-star-fill text-white fs-5 mt-1"></i>
                         </div>
 
-                        <div class="glass-card shadow-lg p-3 px-4 rounded-4 position-absolute z-3"
-                            style="bottom: 120px; right: -40px; animation: floating 6s ease-in-out infinite alternate; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.15);">
-                            <div class="d-flex align-items-center">
-                                <div class="bg-primary-light bg-opacity-25 p-2 rounded-circle me-3"><i
-                                        class="bi bi-whatsapp text-white fs-4"></i></div>
-                                <div>
-                                    <h6 class="mb-0 text-white fw-bold fs-5">+340%</h6><small
-                                        class="text-white-50">Enquiry Growth</small>
-                                </div>
-                            </div>
+                        <!-- Small WhatsApp Circle near bottom center edge -->
+                        <div class="position-absolute bg-white rounded-circle shadow-lg d-flex justify-content-center align-items-center text-primary z-2"
+                            style="width: 35px; height: 35px; bottom: 0px; left: 45%; transform: translateY(50%); animation: floating 4.5s ease-in-out infinite reverse;">
+                            <i class="bi bi-whatsapp fs-5"></i>
                         </div>
+
                     </div>
                 </div>
 
             </div>
         </div>
-
-        <!-- Scrolldown indicator -->
-        <a href="#digital-presence"
-            class="scroll-down-indicator d-none d-md-flex align-items-center justify-content-center text-white text-decoration-none">
-            <i class="bi bi-mouse me-2"></i> Scroll to explore
-        </a>
     </section>
 
     <!-- Core Digital Presence Section (Moved to follow Hero directly) -->
@@ -555,11 +506,14 @@
                             <span class="fs-2 fw-bold text-black-50 opacity-10">05</span>
                         </div>
                         <h4 class="fw-bold mb-3 text-dark-main position-relative z-1">Lead Generation</h4>
-                        <p class="text-muted mb-4 small position-relative z-1 lh-lg">Design systems optimized to convert passing traffic into highly-qualified direct enquiries.</p>
+                        <p class="text-muted mb-4 small position-relative z-1 lh-lg">Design systems optimized to convert
+                            passing traffic into highly-qualified direct enquiries.</p>
 
                         <div class="mb-4 position-relative z-1">
-                            <span class="badge bg-warning bg-opacity-10 text-dark-main border border-warning border-opacity-50 px-3 py-2 rounded-pill small fw-bold d-inline-flex align-items-center">
-                                <i class="bi bi-lightning-charge-fill text-warning me-2 fs-6"></i> <span class="counter" data-target="85000">0</span>+ Leads Generated
+                            <span
+                                class="badge bg-warning bg-opacity-10 text-dark-main border border-warning border-opacity-50 px-3 py-2 rounded-pill small fw-bold d-inline-flex align-items-center">
+                                <i class="bi bi-lightning-charge-fill text-warning me-2 fs-6"></i> <span class="counter"
+                                    data-target="85000">0</span>+ Leads Generated
                             </span>
                         </div>
 
@@ -582,11 +536,14 @@
                             <span class="fs-2 fw-bold text-black-50 opacity-10">06</span>
                         </div>
                         <h4 class="fw-bold mb-3 text-dark-main position-relative z-1">Lead Automation</h4>
-                        <p class="text-muted mb-4 small position-relative z-1 lh-lg">Instant logic and follow-ups. Ensure you never lose a hot prospect to manual delays.</p>
-                        
+                        <p class="text-muted mb-4 small position-relative z-1 lh-lg">Instant logic and follow-ups.
+                            Ensure you never lose a hot prospect to manual delays.</p>
+
                         <div class="mb-4 position-relative z-1">
-                            <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 rounded-pill small fw-bold d-inline-flex align-items-center">
-                                <i class="bi bi-graph-up-arrow me-2 fs-6"></i> <span class="counter" data-target="15000">0</span>+ Leads Generated
+                            <span
+                                class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 px-3 py-2 rounded-pill small fw-bold d-inline-flex align-items-center">
+                                <i class="bi bi-graph-up-arrow me-2 fs-6"></i> <span class="counter"
+                                    data-target="15000">0</span>+ Leads Generated
                             </span>
                         </div>
 
@@ -1542,22 +1499,32 @@
     <!-- Testimonials / Client Reviews Section -->
     <section id="testimonials" class="section-padding bg-white position-relative overflow-hidden">
         <!-- Abstract Background Shape -->
-        <div class="position-absolute top-0 start-0 bg-primary opacity-5 rounded-circle" style="width: 400px; height: 400px; filter: blur(60px); transform: translate(-50%, -50%);"></div>
+        <div class="position-absolute top-0 start-0 bg-primary opacity-5 rounded-circle"
+            style="width: 400px; height: 400px; filter: blur(60px); transform: translate(-50%, -50%);"></div>
 
         <div class="container position-relative z-1">
             <div class="row align-items-end mb-5" data-aos="fade-up">
                 <div class="col-lg-8 mb-4 mb-lg-0">
-                    <span class="badge bg-primary-light bg-opacity-25 text-primary rounded-pill px-3 py-2 mb-3 fw-bold border border-primary border-opacity-10">CLIENT REVIEWS</span>
+                    <span
+                        class="badge bg-primary-light bg-opacity-25 text-primary rounded-pill px-3 py-2 mb-3 fw-bold border border-primary border-opacity-10">CLIENT
+                        REVIEWS</span>
                     <h2 class="display-5 fw-bold text-dark-main font-outfit mb-3">Don't Just Take Our Word For It</h2>
-                    <p class="text-muted fs-5 mb-0 pe-lg-5">See how we've helped service businesses scale their operations and dominate their local markets with automated systems.</p>
+                    <p class="text-muted fs-5 mb-0 pe-lg-5">See how we've helped service businesses scale their
+                        operations and dominate their local markets with automated systems.</p>
                 </div>
                 <div class="col-lg-4 text-lg-end d-none d-md-block">
                     <!-- Slider Arrows (Desktop Top-Right) -->
                     <div class="d-inline-flex gap-3 position-relative z-2">
-                        <button class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale" style="width: 55px; height: 55px;" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
+                        <button
+                            class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale"
+                            style="width: 55px; height: 55px;" type="button" data-bs-target="#testimonialSlider"
+                            data-bs-slide="prev">
                             <i class="bi bi-arrow-left fs-5"></i>
                         </button>
-                        <button class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale" style="width: 55px; height: 55px;" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
+                        <button
+                            class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale"
+                            style="width: 55px; height: 55px;" type="button" data-bs-target="#testimonialSlider"
+                            data-bs-slide="next">
                             <i class="bi bi-arrow-right fs-5"></i>
                         </button>
                     </div>
@@ -1571,13 +1538,19 @@
                         <div class="row g-4 align-items-center">
                             <!-- Review 1 -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
+                                <div
+                                    class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
                                     <div class="d-flex text-warning mb-3 fs-6">
-                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill"></i>
                                     </div>
-                                    <p class="text-dark-main fw-medium lh-lg mb-4">"DigitalXPro completely transformed our lead flow. We went from struggling to get 5 calls a week to being completely booked out a month in advance. Their local SEO strategy is unmatched."</p>
+                                    <p class="text-dark-main fw-medium lh-lg mb-4">"DigitalXPro completely transformed
+                                        our lead flow. We went from struggling to get 5 calls a week to being completely
+                                        booked out a month in advance. Their local SEO strategy is unmatched."</p>
                                     <div class="d-flex align-items-center mt-auto">
-                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10" style="width: 50px; height: 50px;">MJ</div>
+                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10"
+                                            style="width: 50px; height: 50px;">MJ</div>
                                         <div class="ms-3">
                                             <h6 class="fw-bold mb-0 text-dark-main">Michael Johnson</h6>
                                             <span class="small text-muted">Owner, Elite Plumbing</span>
@@ -1585,17 +1558,25 @@
                                     </div>
                                 </div>
                             </div>
-            
+
                             <!-- Review 2 (Highlighted) -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="bg-dark-main p-4 p-lg-5 rounded-5 shadow-xl position-relative group hover-lift transition-all transform-scale z-2 h-100" style="transform: scale(1.05);">
-                                    <i class="bi bi-quote position-absolute text-white opacity-10" style="font-size: 8rem; top: -20px; right: 10px;"></i>
+                                <div class="bg-dark-main p-4 p-lg-5 rounded-5 shadow-xl position-relative group hover-lift transition-all transform-scale z-2 h-100"
+                                    style="transform: scale(1.05);">
+                                    <i class="bi bi-quote position-absolute text-white opacity-10"
+                                        style="font-size: 8rem; top: -20px; right: 10px;"></i>
                                     <div class="d-flex text-warning mb-3 fs-6 position-relative z-1">
-                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill"></i>
                                     </div>
-                                    <p class="text-white opacity-90 fw-medium lh-lg mb-4 position-relative z-1">"The Google Ads campaign they built for us literally paid for itself within the first 3 days. The lead automation system ensures our sales team never misses a follow-up. Incredible ROI."</p>
+                                    <p class="text-white opacity-90 fw-medium lh-lg mb-4 position-relative z-1">"The
+                                        Google Ads campaign they built for us literally paid for itself within the first
+                                        3 days. The lead automation system ensures our sales team never misses a
+                                        follow-up. Incredible ROI."</p>
                                     <div class="d-flex align-items-center mt-auto position-relative z-1">
-                                        <div class="bg-white text-dark-main fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">SD</div>
+                                        <div class="bg-white text-dark-main fw-bold rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 50px; height: 50px;">SD</div>
                                         <div class="ms-3">
                                             <h6 class="fw-bold mb-0 text-white">Sarah Davis</h6>
                                             <span class="small text-white-50">Director, Apex Roofing</span>
@@ -1603,16 +1584,22 @@
                                     </div>
                                 </div>
                             </div>
-            
+
                             <!-- Review 3 -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
+                                <div
+                                    class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
                                     <div class="d-flex text-warning mb-3 fs-6">
-                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill"></i>
                                     </div>
-                                    <p class="text-dark-main fw-medium lh-lg mb-4">"Before working with this team, our Google ratings were stagnant. With their review generation system, we hit 500+ 5-star reviews in under 6 months. It's an absolute game-changer."</p>
+                                    <p class="text-dark-main fw-medium lh-lg mb-4">"Before working with this team, our
+                                        Google ratings were stagnant. With their review generation system, we hit 500+
+                                        5-star reviews in under 6 months. It's an absolute game-changer."</p>
                                     <div class="d-flex align-items-center mt-auto">
-                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10" style="width: 50px; height: 50px;">DR</div>
+                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10"
+                                            style="width: 50px; height: 50px;">DR</div>
                                         <div class="ms-3">
                                             <h6 class="fw-bold mb-0 text-dark-main">David Rodriguez</h6>
                                             <span class="small text-muted">Founder, Platinum MedSpa</span>
@@ -1628,13 +1615,19 @@
                         <div class="row g-4 align-items-center">
                             <!-- Review 4 -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
+                                <div
+                                    class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
                                     <div class="d-flex text-warning mb-3 fs-6">
-                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill"></i>
                                     </div>
-                                    <p class="text-dark-main fw-medium lh-lg mb-4">"We've tried three other agencies before finding this team. Our cost-per-lead dropped by 40% in just two months and the quality of enquiries is drastically higher. Highly recommended."</p>
+                                    <p class="text-dark-main fw-medium lh-lg mb-4">"We've tried three other agencies
+                                        before finding this team. Our cost-per-lead dropped by 40% in just two months
+                                        and the quality of enquiries is drastically higher. Highly recommended."</p>
                                     <div class="d-flex align-items-center mt-auto">
-                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10" style="width: 50px; height: 50px;">AM</div>
+                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10"
+                                            style="width: 50px; height: 50px;">AM</div>
                                         <div class="ms-3">
                                             <h6 class="fw-bold mb-0 text-dark-main">Anna Martinez</h6>
                                             <span class="small text-muted">CEO, Precision HVAC</span>
@@ -1642,17 +1635,25 @@
                                     </div>
                                 </div>
                             </div>
-            
+
                             <!-- Review 5 (Highlighted) -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="bg-dark-main p-4 p-lg-5 rounded-5 shadow-xl position-relative group hover-lift transition-all transform-scale z-2 h-100" style="transform: scale(1.05);">
-                                    <i class="bi bi-quote position-absolute text-white opacity-10" style="font-size: 8rem; top: -20px; right: 10px;"></i>
+                                <div class="bg-dark-main p-4 p-lg-5 rounded-5 shadow-xl position-relative group hover-lift transition-all transform-scale z-2 h-100"
+                                    style="transform: scale(1.05);">
+                                    <i class="bi bi-quote position-absolute text-white opacity-10"
+                                        style="font-size: 8rem; top: -20px; right: 10px;"></i>
                                     <div class="d-flex text-warning mb-3 fs-6 position-relative z-1">
-                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill"></i>
                                     </div>
-                                    <p class="text-white opacity-90 fw-medium lh-lg mb-4 position-relative z-1">"The onboarding process was incredibly smooth. They actually understand service businesses. The CRM automation they built tracks every single lead so nothing slips through the cracks anymore."</p>
+                                    <p class="text-white opacity-90 fw-medium lh-lg mb-4 position-relative z-1">"The
+                                        onboarding process was incredibly smooth. They actually understand service
+                                        businesses. The CRM automation they built tracks every single lead so nothing
+                                        slips through the cracks anymore."</p>
                                     <div class="d-flex align-items-center mt-auto position-relative z-1">
-                                        <div class="bg-white text-dark-main fw-bold rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">TB</div>
+                                        <div class="bg-white text-dark-main fw-bold rounded-circle d-flex align-items-center justify-content-center"
+                                            style="width: 50px; height: 50px;">TB</div>
                                         <div class="ms-3">
                                             <h6 class="fw-bold mb-0 text-white">Tom Baker</h6>
                                             <span class="small text-white-50">Co-Founder, FastTrack Movers</span>
@@ -1660,16 +1661,23 @@
                                     </div>
                                 </div>
                             </div>
-            
+
                             <!-- Review 6 -->
                             <div class="col-md-6 col-lg-4">
-                                <div class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
+                                <div
+                                    class="bg-light p-4 p-lg-5 rounded-5 border border-white shadow-sm position-relative group hover-lift transition-all h-100">
                                     <div class="d-flex text-warning mb-3 fs-6">
-                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill me-1"></i><i class="bi bi-star-fill me-1"></i><i
+                                            class="bi bi-star-fill"></i>
                                     </div>
-                                    <p class="text-dark-main fw-medium lh-lg mb-4">"Finally, an agency that delivers on its promises. From Google Maps ranking to our new high-converting website, everything they touch turns into revenue. They don't just pitch, they produce."</p>
+                                    <p class="text-dark-main fw-medium lh-lg mb-4">"Finally, an agency that delivers on
+                                        its promises. From Google Maps ranking to our new high-converting website,
+                                        everything they touch turns into revenue. They don't just pitch, they produce."
+                                    </p>
                                     <div class="d-flex align-items-center mt-auto">
-                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10" style="width: 50px; height: 50px;">CL</div>
+                                        <div class="bg-primary bg-opacity-10 text-primary fw-bold rounded-circle d-flex align-items-center justify-content-center border border-primary border-opacity-10"
+                                            style="width: 50px; height: 50px;">CL</div>
                                         <div class="ms-3">
                                             <h6 class="fw-bold mb-0 text-dark-main">Chris Livingston</h6>
                                             <span class="small text-muted">Manager, Secure IT Solutions</span>
@@ -1683,10 +1691,16 @@
 
                 <!-- Mobile Slider Arrows (Visible only on small mobile devices at the bottom) -->
                 <div class="d-flex justify-content-center mt-5 pt-2 gap-3 position-relative z-2 d-md-none">
-                    <button class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale" style="width: 50px; height: 50px;" type="button" data-bs-target="#testimonialSlider" data-bs-slide="prev">
+                    <button
+                        class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale"
+                        style="width: 50px; height: 50px;" type="button" data-bs-target="#testimonialSlider"
+                        data-bs-slide="prev">
                         <i class="bi bi-arrow-left fs-5"></i>
                     </button>
-                    <button class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale" style="width: 50px; height: 50px;" type="button" data-bs-target="#testimonialSlider" data-bs-slide="next">
+                    <button
+                        class="btn btn-outline-dark rounded-circle shadow-sm d-flex align-items-center justify-content-center transition-all bg-white hover-scale"
+                        style="width: 50px; height: 50px;" type="button" data-bs-target="#testimonialSlider"
+                        data-bs-slide="next">
                         <i class="bi bi-arrow-right fs-5"></i>
                     </button>
                 </div>
@@ -1810,13 +1824,19 @@
             <div class="row align-items-center g-5">
                 <!-- Left Pitch & Details -->
                 <div class="col-lg-5 pe-lg-5" data-aos="fade-right">
-                    <span class="badge bg-primary-light bg-opacity-25 text-primary rounded-pill px-3 py-2 mb-3 fw-bold border border-primary border-opacity-10">GET IN TOUCH</span>
-                    <h2 class="display-5 fw-bold text-dark-main font-outfit mb-4 lh-sm">Let's Build Your Growth System</h2>
-                    <p class="text-muted fs-5 mb-5 lh-base pe-lg-4">Ready to stop guessing and start scaling? Book a quick call or leave us a message. We move fast.</p>
-                    
+                    <span
+                        class="badge bg-primary-light bg-opacity-25 text-primary rounded-pill px-3 py-2 mb-3 fw-bold border border-primary border-opacity-10">GET
+                        IN TOUCH</span>
+                    <h2 class="display-5 fw-bold text-dark-main font-outfit mb-4 lh-sm">Let's Build Your Growth System
+                    </h2>
+                    <p class="text-muted fs-5 mb-5 lh-base pe-lg-4">Ready to stop guessing and start scaling? Book a
+                        quick call or leave us a message. We move fast.</p>
+
                     <div class="d-flex flex-column gap-4">
-                        <div class="d-flex align-items-center bg-white p-4 rounded-4 shadow-sm border border-light transition-all hover-lift cursor-pointer group">
-                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 group-hover-bg transition-all" style="width: 50px; height: 50px;">
+                        <div
+                            class="d-flex align-items-center bg-white p-4 rounded-4 shadow-sm border border-light transition-all hover-lift cursor-pointer group">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 group-hover-bg transition-all"
+                                style="width: 50px; height: 50px;">
                                 <i class="bi bi-telephone-fill fs-5"></i>
                             </div>
                             <div class="ms-4">
@@ -1824,9 +1844,11 @@
                                 <p class="text-muted small mb-0">+1 (555) 123-4567</p>
                             </div>
                         </div>
-                        
-                        <div class="d-flex align-items-center bg-white p-4 rounded-4 shadow-sm border border-light transition-all hover-lift cursor-pointer group">
-                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 group-hover-bg transition-all" style="width: 50px; height: 50px;">
+
+                        <div
+                            class="d-flex align-items-center bg-white p-4 rounded-4 shadow-sm border border-light transition-all hover-lift cursor-pointer group">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 group-hover-bg transition-all"
+                                style="width: 50px; height: 50px;">
                                 <i class="bi bi-envelope-fill fs-5"></i>
                             </div>
                             <div class="ms-4">
@@ -1836,45 +1858,63 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Right Form Wrapper -->
                 <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-                    <div class="bg-white rounded-5 shadow-xl p-4 p-md-5 border border-light position-relative overflow-hidden">
+                    <div
+                        class="bg-white rounded-5 shadow-xl p-4 p-md-5 border border-light position-relative overflow-hidden">
                         <!-- Decorative background blur -->
-                        <div class="position-absolute top-0 end-0 bg-primary opacity-10 rounded-circle" style="width: 250px; height: 250px; filter: blur(60px); transform: translate(30%, -30%);"></div>
-                        
-                        <h4 class="fw-bolder text-dark-main mb-4 font-outfit position-relative z-1">Send us a message</h4>
-                        
+                        <div class="position-absolute top-0 end-0 bg-primary opacity-10 rounded-circle"
+                            style="width: 250px; height: 250px; filter: blur(60px); transform: translate(30%, -30%);">
+                        </div>
+
+                        <h4 class="fw-bolder text-dark-main mb-4 font-outfit position-relative z-1">Send us a message
+                        </h4>
+
                         <!-- Success View for Contact Form -->
-                        <div id="contactSuccessMsg" class="d-none flex-column align-items-center justify-content-center text-center py-5 position-relative z-1 fade-in">
-                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-3 heartbeat" style="width: 70px; height: 70px;">
+                        <div id="contactSuccessMsg"
+                            class="d-none flex-column align-items-center justify-content-center text-center py-5 position-relative z-1 fade-in">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-3 heartbeat"
+                                style="width: 70px; height: 70px;">
                                 <i class="bi bi-check-lg" style="font-size: 2.5rem;"></i>
                             </div>
                             <h4 class="fw-bold text-dark-main font-outfit">Message Sent!</h4>
-                            <p class="text-muted small">We've received your message and will get back to you shortly.</p>
+                            <p class="text-muted small">We've received your message and will get back to you shortly.
+                            </p>
                         </div>
-                        
+
                         <form id="contactPageForm" class="position-relative z-1">
                             <div class="row g-3 mb-4">
                                 <div class="col-sm-6">
                                     <label class="form-label small fw-bold text-muted ps-3 mb-2">First Name</label>
-                                    <input type="text" class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none fw-medium text-dark-main" id="contactName" placeholder="Your Name" required>
+                                    <input type="text"
+                                        class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none fw-medium text-dark-main"
+                                        id="contactName" placeholder="Your Name" required>
                                 </div>
                                 <div class="col-sm-6">
                                     <label class="form-label small fw-bold text-muted ps-3 mb-2">Email Address</label>
-                                    <input type="email" class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none fw-medium text-dark-main" id="contactEmail" placeholder="your@email.com" required>
+                                    <input type="email"
+                                        class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none fw-medium text-dark-main"
+                                        id="contactEmail" placeholder="your@email.com" required>
                                 </div>
                             </div>
                             <div class="mb-4">
                                 <label class="form-label small fw-bold text-muted ps-3 mb-2">Subject</label>
-                                <input type="text" class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none fw-medium text-dark-main" id="contactSubject" placeholder="How can we help?">
+                                <input type="text"
+                                    class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none fw-medium text-dark-main"
+                                    id="contactSubject" placeholder="How can we help?">
                             </div>
                             <div class="mb-5">
                                 <label class="form-label small fw-bold text-muted ps-3 mb-2">Message</label>
-                                <textarea class="form-control bg-light border-0 rounded-4 px-4 py-3 shadow-none fw-medium text-dark-main" id="contactMessage" style="height: 120px" placeholder="Write your message here..."></textarea>
+                                <textarea
+                                    class="form-control bg-light border-0 rounded-4 px-4 py-3 shadow-none fw-medium text-dark-main"
+                                    id="contactMessage" style="height: 120px"
+                                    placeholder="Write your message here..."></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-lg hover-lift transition-all w-100 d-flex justify-content-center align-items-center group">
-                                Send Message <i class="bi bi-send ms-2 transition-transform group-hover-translate-x"></i>
+                            <button type="submit"
+                                class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-lg hover-lift transition-all w-100 d-flex justify-content-center align-items-center group">
+                                Send Message <i
+                                    class="bi bi-send ms-2 transition-transform group-hover-translate-x"></i>
                             </button>
                         </form>
                     </div>
@@ -2057,8 +2097,12 @@
                     <div
                         class="col-md-5 bg-gradient-brand text-white p-5 d-none d-md-flex flex-column justify-content-between position-relative overflow-hidden">
                         <!-- Abstract geometric elements instead of the huge bullseye -->
-                        <div class="position-absolute rounded-circle bg-white" style="width: 300px; height: 300px; top: -100px; right: -150px; pointer-events: none; opacity: 0.05;"></div>
-                        <div class="position-absolute rounded-circle bg-white" style="width: 200px; height: 200px; bottom: -50px; left: -80px; pointer-events: none; opacity: 0.05;"></div>
+                        <div class="position-absolute rounded-circle bg-white"
+                            style="width: 300px; height: 300px; top: -100px; right: -150px; pointer-events: none; opacity: 0.05;">
+                        </div>
+                        <div class="position-absolute rounded-circle bg-white"
+                            style="width: 200px; height: 200px; bottom: -50px; left: -80px; pointer-events: none; opacity: 0.05;">
+                        </div>
 
                         <div class="z-1">
                             <span
@@ -2100,27 +2144,38 @@
                         </div>
 
                         <!-- Success Message (Hidden by default) -->
-                        <div id="successMessage" class="d-none flex-column align-items-center justify-content-center text-center h-100 py-3">
-                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4 heartbeat" style="width: 80px; height: 80px;">
+                        <div id="successMessage"
+                            class="d-none flex-column align-items-center justify-content-center text-center h-100 py-3">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4 heartbeat"
+                                style="width: 80px; height: 80px;">
                                 <i class="bi bi-check-lg" style="font-size: 3rem;"></i>
                             </div>
                             <h3 class="fw-bold text-dark-main font-outfit">Application Received!</h3>
-                            <p class="text-muted mt-2">Thank you! Our strategy team is reviewing your details. We'll be in touch within 24 hours to schedule your strategy call.</p>
+                            <p class="text-muted mt-2">Thank you! Our strategy team is reviewing your details. We'll be
+                                in touch within 24 hours to schedule your strategy call.</p>
                         </div>
 
                         <form id="quoteForm">
                             <div class="mb-4">
                                 <label class="form-label small fw-bold text-muted ps-3 mb-2">Primary Goal</label>
                                 <div class="dropdown w-100">
-                                    <button class="btn bg-light border-0 rounded-pill px-4 py-3 shadow-none w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="serviceDropdownBtn">
+                                    <button
+                                        class="btn bg-light border-0 rounded-pill px-4 py-3 shadow-none w-100 text-start d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                        id="serviceDropdownBtn">
                                         <span class="text-muted" id="serviceBtnText">Select Core Focus...</span>
                                         <i class="bi bi-chevron-down ms-2 small text-muted"></i>
                                     </button>
-                                    <ul class="dropdown-menu w-100 border-0 shadow-lg rounded-4 p-2 mt-2 custom-select-dropdown">
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Google Business Ranking">Google Business Ranking</a></li>
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Google Ads Campaigns">Google Ads Campaigns</a></li>
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Review Generation System">Review Generation System</a></li>
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Comprehensive SEO Funnel">Comprehensive SEO Funnel</a></li>
+                                    <ul
+                                        class="dropdown-menu w-100 border-0 shadow-lg rounded-4 p-2 mt-2 custom-select-dropdown">
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="Google Business Ranking">Google Business Ranking</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="Google Ads Campaigns">Google Ads Campaigns</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="Review Generation System">Review Generation System</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="Comprehensive SEO Funnel">Comprehensive SEO Funnel</a></li>
                                     </ul>
                                     <input type="hidden" id="serviceReq" name="serviceReq" value="">
                                 </div>
@@ -2144,28 +2199,39 @@
                             <div class="mb-4">
                                 <label class="form-label small fw-bold text-muted ps-3 mb-2">Marketing Budget</label>
                                 <div class="dropdown w-100">
-                                    <button class="btn bg-light border-0 rounded-pill px-4 py-3 shadow-none w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="budgetDropdownBtn">
+                                    <button
+                                        class="btn bg-light border-0 rounded-pill px-4 py-3 shadow-none w-100 text-start d-flex justify-content-between align-items-center"
+                                        type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                        id="budgetDropdownBtn">
                                         <span class="text-muted" id="budgetBtnText">Select Budget...</span>
                                         <i class="bi bi-chevron-down ms-2 small text-muted"></i>
                                     </button>
-                                    <ul class="dropdown-menu w-100 border-0 shadow-lg rounded-4 p-2 mt-2 custom-select-dropdown">
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="$1k - $3k / month">$1k - $3k / month</a></li>
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="$3k - $10k / month">$3k - $10k / month</a></li>
-                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="$10k+ / month">$10k+ / month</a></li>
+                                    <ul
+                                        class="dropdown-menu w-100 border-0 shadow-lg rounded-4 p-2 mt-2 custom-select-dropdown">
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="$1k - $3k / month">$1k - $3k / month</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="$3k - $10k / month">$3k - $10k / month</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#"
+                                                data-val="$10k+ / month">$10k+ / month</a></li>
                                     </ul>
                                     <input type="hidden" id="budgetRange" name="budgetRange" value="">
                                 </div>
                             </div>
 
                             <div class="mb-5">
-                                <label class="form-label small fw-bold text-muted ps-3 mb-2">Current Biggest Bottleneck?</label>
-                                <textarea class="form-control bg-light border-0 rounded-4 shadow-none p-4 text-dark-main fw-medium" rows="2" placeholder="e.g. Getting traffic but no qualified calls..."></textarea>
+                                <label class="form-label small fw-bold text-muted ps-3 mb-2">Current Biggest
+                                    Bottleneck?</label>
+                                <textarea
+                                    class="form-control bg-light border-0 rounded-4 shadow-none p-4 text-dark-main fw-medium"
+                                    rows="2" placeholder="e.g. Getting traffic but no qualified calls..."></textarea>
                             </div>
 
                             <button type="submit"
                                 class="btn btn-primary w-100 py-3 rounded-pill fw-bold shadow-lg position-relative overflow-hidden group hover-lift transition-all">
                                 <span class="position-relative z-1 d-flex justify-content-center align-items-center">
-                                    Submit Application <i class="bi bi-arrow-right ms-2 transition-transform group-hover-translate-x"></i>
+                                    Submit Application <i
+                                        class="bi bi-arrow-right ms-2 transition-transform group-hover-translate-x"></i>
                                 </span>
                             </button>
                         </form>

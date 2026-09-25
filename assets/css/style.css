@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6, .font-outfit, .logo-text {
     color: var(--primary) !important;
 }
 .custom-navbar .nav-link {
-    color: white;
+    color: var(--text-main);
     font-weight: 500;
     margin: 0 15px;
     position: relative;
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6, .font-outfit, .logo-text {
 .custom-navbar.scrolled .nav-link:hover, .custom-navbar.scrolled .nav-link.active {
     color: var(--primary);
 }
-.custom-navbar .logo-text { color: white; transition: color 0.3s;}
+.custom-navbar .logo-text { color: var(--text-main); transition: color 0.3s;}
 .custom-navbar.scrolled .logo-text { color: var(--text-main); }
 .custom-navbar .nav-link::before {
     content: '';
@@ -132,22 +132,12 @@ h1, h2, h3, h4, h5, h6, .font-outfit, .logo-text {
 .custom-navbar .nav-link:hover::before { width: 100%; }
 .custom-navbar.scrolled .btn { padding: 8px 24px !important; }
 
-/* Modern Split Hero section */
-.modern-hero {
-    background: radial-gradient(circle at 10% 20%, var(--bg-dark) 0%, #043831 90%);
-    background-color: var(--bg-dark);
+/* Startup Hero section */
+.startup-hero {
     min-height: 100vh;
     padding-top: 80px;
     position: relative;
     z-index: 1;
-}
-.modern-hero::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
-    background-size: 30px 30px;
-    z-index: -1;
 }
 
 /* Floating WhatsApp */
