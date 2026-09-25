@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalXPro | Growth Agency</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- Header / Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top custom-navbar mt-3 mx-lg-auto rounded-pill glass-nav"
+        style="max-width: 1200px; right: 15px; left: 15px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold logo-text" href="index.html#">DigitalX<span class="text-primary-light">Pro</span></a>
+            <button class="navbar-toggler border-0 focus-ring" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <i class="bi bi-list fs-1 text-primary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle" href="index.html#services" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Services</a>
+                        <ul
+                            class="dropdown-menu border-0 shadow-lg border-primary border-top border-3 rounded-4 animate-dropdown m-0 mt-2 p-2 glass-dropdown">
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="index.html#services">Google
+                                    Business Profile</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="index.html#services">Google
+                                    Ads & AdSense</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="index.html#services">Local
+                                    SEO</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="index.html#services">Review
+                                    Management</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="index.html#services">Lead
+                                    Generation</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="index.html#services">Lead
+                                    Automation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Results</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#footer">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary rounded-pill px-4 py-2 fw-semibold shadow-sm pulse-btn"
+                    data-bs-toggle="modal" data-bs-target="#quoteModal">Free Audit</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Blog Hero -->
+    <section class="bg-dark-main position-relative overflow-hidden" style="padding-top: 160px; padding-bottom: 80px;">
+        <div class="position-absolute bg-primary rounded-circle opacity-10 float-animation" style="width: 400px; height: 400px; top: -100px; left: -100px; filter: blur(80px);"></div>
+        <div class="container position-relative z-1 pt-4 pb-3">
+            <div class="text-center" data-aos="fade-up">
+                <span class="badge bg-white bg-opacity-10 text-white rounded-pill px-3 py-2 mb-3 shadow"><i class="bi bi-journal-text text-primary-light me-2"></i>OUR BLOG</span>
+                <h1 class="display-4 fw-900 text-white font-outfit mb-4">Latest Insights & <br>Growth <span class="text-primary-light">Strategies</span></h1>
+                <p class="text-white-50 fs-5 mx-auto col-lg-7">Actionable guides, case studies, and industry news to help you scale your service business using automated lead systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Content -->
+    <section class="section-padding bg-light position-relative" style="padding-top: 80px;">
+        <div class="container">
+            <!-- Filter Nav (Optional UI) -->
+            <ul class="nav nav-pills justify-content-center mb-5 gap-2 blog-filter-nav" data-aos="fade-up">
+                <li class="nav-item"><a class="nav-link active rounded-pill px-4 py-2 fw-medium shadow-sm transition-all text-white bg-primary" href="#">All Articles</a></li>
+                <li class="nav-item"><a class="nav-link rounded-pill px-4 py-2 fw-medium bg-white text-dark-main shadow-sm transition-all hover-primary" href="#">Google Ads</a></li>
+                <li class="nav-item"><a class="nav-link rounded-pill px-4 py-2 fw-medium bg-white text-dark-main shadow-sm transition-all hover-primary" href="#">Local SEO</a></li>
+                <li class="nav-item"><a class="nav-link rounded-pill px-4 py-2 fw-medium bg-white text-dark-main shadow-sm transition-all hover-primary" href="#">Automation</a></li>
+            </ul>
+
+            <div class="row g-4 pt-2" id="blogGrid">
+                <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100" data-category="Google Ads">
+
+                    <div class="blog-card group h-100 d-flex flex-column">
+                        <div class="blog-img-wrapper overflow-hidden rounded-4 bg-light shadow-sm">
+                            <span class="badge bg-warning text-white position-absolute top-0 start-0 m-3 z-2 rounded-pill px-3 py-2 shadow pb-1">Featured</span>
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80"
+                                alt="How to Scale Your Ad Budget Without Losing ROI" class="img-fluid w-100 object-fit-cover transition-all proj-img group-hover-scale"
+                                style="height: 250px;">
+                        </div>
+                        <div class="blog-content bg-white rounded-4 p-4 shadow position-relative border border-light mx-sm-3 mx-2 flex-grow-1 d-flex flex-column"
+                            style="margin-top: -40px; z-index: 2;">
+                            <div class="d-flex align-items-center text-muted small mb-3 fw-medium">
+                                <span class="text-primary">Google Ads</span>
+                                <i class="bi bi-circle-fill text-warning mx-2" style="font-size: 5px;"></i>
+                                <span>20 Dec, 2025</span>
+                            </div>
+                            <h5 class="fw-bold text-dark-main mb-4 blog-title transition-all d-block">How to Scale Your Ad Budget Without Losing ROI</h5>
+
+                            <div class="d-flex justify-content-end position-relative z-1 mt-auto pt-3 border-top border-light">
+                                <a href="single-blog.html"
+                                    class="text-dark-main fw-bold text-decoration-none small d-flex align-items-center transition-all read-more-text">
+                                    <i class="bi bi-arrow-right me-2 transition-transform"></i> Read Full Article
+                                </a>
+                            </div>
+                            <div class="blog-trim-shape"></div>
+                        </div>
+                    </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200" data-category="Local SEO">
+
+                    <div class="blog-card group h-100 d-flex flex-column">
+                        <div class="blog-img-wrapper overflow-hidden rounded-4 bg-light shadow-sm">
+                            <span class="badge bg-dark-main text-white position-absolute top-0 start-0 m-3 z-2 rounded-pill px-3 py-2 shadow pb-1">Local SEO</span>
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+                                alt="The Ultimate Checklist for Google Maps Domination" class="img-fluid w-100 object-fit-cover transition-all proj-img group-hover-scale"
+                                style="height: 250px;">
+                        </div>
+                        <div class="blog-content bg-white rounded-4 p-4 shadow position-relative border border-light mx-sm-3 mx-2 flex-grow-1 d-flex flex-column"
+                            style="margin-top: -40px; z-index: 2;">
+                            <div class="d-flex align-items-center text-muted small mb-3 fw-medium">
+                                <span class="text-primary">Local SEO</span>
+                                <i class="bi bi-circle-fill text-warning mx-2" style="font-size: 5px;"></i>
+                                <span>18 Dec, 2025</span>
+                            </div>
+                            <h5 class="fw-bold text-dark-main mb-4 blog-title transition-all d-block">The Ultimate Checklist for Google Maps Domination</h5>
+
+                            <div class="d-flex justify-content-end position-relative z-1 mt-auto pt-3 border-top border-light">
+                                <a href="single-blog.html"
+                                    class="text-dark-main fw-bold text-decoration-none small d-flex align-items-center transition-all read-more-text">
+                                    <i class="bi bi-arrow-right me-2 transition-transform"></i> Read Full Article
+                                </a>
+                            </div>
+                            <div class="blog-trim-shape"></div>
+                        </div>
+                    </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="300" data-category="Automation">
+
+                    <div class="blog-card group h-100 d-flex flex-column">
+                        <div class="blog-img-wrapper overflow-hidden rounded-4 bg-light shadow-sm">
+                            <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 z-2 rounded-pill px-3 py-2 shadow pb-1">Automation</span>
+                            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=80"
+                                alt="The Best Automated Funnels for Service Businesses" class="img-fluid w-100 object-fit-cover transition-all proj-img group-hover-scale"
+                                style="height: 250px;">
+                        </div>
+                        <div class="blog-content bg-white rounded-4 p-4 shadow position-relative border border-light mx-sm-3 mx-2 flex-grow-1 d-flex flex-column"
+                            style="margin-top: -40px; z-index: 2;">
+                            <div class="d-flex align-items-center text-muted small mb-3 fw-medium">
+                                <span class="text-primary">Automation</span>
+                                <i class="bi bi-circle-fill text-warning mx-2" style="font-size: 5px;"></i>
+                                <span>15 Dec, 2025</span>
+                            </div>
+                            <h5 class="fw-bold text-dark-main mb-4 blog-title transition-all d-block">The Best Automated Funnels for Service Businesses</h5>
+
+                            <div class="d-flex justify-content-end position-relative z-1 mt-auto pt-3 border-top border-light">
+                                <a href="single-blog.html"
+                                    class="text-dark-main fw-bold text-decoration-none small d-flex align-items-center transition-all read-more-text">
+                                    <i class="bi bi-arrow-right me-2 transition-transform"></i> Read Full Article
+                                </a>
+                            </div>
+                            <div class="blog-trim-shape"></div>
+                        </div>
+                    </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100" data-category="Sales">
+
+                    <div class="blog-card group h-100 d-flex flex-column">
+                        <div class="blog-img-wrapper overflow-hidden rounded-4 bg-light shadow-sm">
+                            <span class="badge bg-dark-main text-white position-absolute top-0 start-0 m-3 z-2 rounded-pill px-3 py-2 shadow pb-1">Sales</span>
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=600&q=80"
+                                alt="Closing the 10x Lead: Scripts for Agency Owners" class="img-fluid w-100 object-fit-cover transition-all proj-img group-hover-scale"
+                                style="height: 250px;">
+                        </div>
+                        <div class="blog-content bg-white rounded-4 p-4 shadow position-relative border border-light mx-sm-3 mx-2 flex-grow-1 d-flex flex-column"
+                            style="margin-top: -40px; z-index: 2;">
+                            <div class="d-flex align-items-center text-muted small mb-3 fw-medium">
+                                <span class="text-primary">Sales</span>
+                                <i class="bi bi-circle-fill text-warning mx-2" style="font-size: 5px;"></i>
+                                <span>10 Dec, 2025</span>
+                            </div>
+                            <h5 class="fw-bold text-dark-main mb-4 blog-title transition-all d-block">Closing the 10x Lead: Scripts for Agency Owners</h5>
+
+                            <div class="d-flex justify-content-end position-relative z-1 mt-auto pt-3 border-top border-light">
+                                <a href="single-blog.html"
+                                    class="text-dark-main fw-bold text-decoration-none small d-flex align-items-center transition-all read-more-text">
+                                    <i class="bi bi-arrow-right me-2 transition-transform"></i> Read Full Article
+                                </a>
+                            </div>
+                            <div class="blog-trim-shape"></div>
+                        </div>
+                    </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200" data-category="Reputation">
+
+                    <div class="blog-card group h-100 d-flex flex-column">
+                        <div class="blog-img-wrapper overflow-hidden rounded-4 bg-light shadow-sm">
+                            <span class="badge bg-primary text-white position-absolute top-0 start-0 m-3 z-2 rounded-pill px-3 py-2 shadow pb-1">Reviews</span>
+                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600&q=80"
+                                alt="Handling 1-Star Google Reviews Like a Professional" class="img-fluid w-100 object-fit-cover transition-all proj-img group-hover-scale"
+                                style="height: 250px;">
+                        </div>
+                        <div class="blog-content bg-white rounded-4 p-4 shadow position-relative border border-light mx-sm-3 mx-2 flex-grow-1 d-flex flex-column"
+                            style="margin-top: -40px; z-index: 2;">
+                            <div class="d-flex align-items-center text-muted small mb-3 fw-medium">
+                                <span class="text-primary">Reputation</span>
+                                <i class="bi bi-circle-fill text-warning mx-2" style="font-size: 5px;"></i>
+                                <span>05 Dec, 2025</span>
+                            </div>
+                            <h5 class="fw-bold text-dark-main mb-4 blog-title transition-all d-block">Handling 1-Star Google Reviews Like a Professional</h5>
+
+                            <div class="d-flex justify-content-end position-relative z-1 mt-auto pt-3 border-top border-light">
+                                <a href="single-blog.html"
+                                    class="text-dark-main fw-bold text-decoration-none small d-flex align-items-center transition-all read-more-text">
+                                    <i class="bi bi-arrow-right me-2 transition-transform"></i> Read Full Article
+                                </a>
+                            </div>
+                            <div class="blog-trim-shape"></div>
+                        </div>
+                    </div>
+</div>
+<div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="300" data-category="Landing Pages">
+
+                    <div class="blog-card group h-100 d-flex flex-column">
+                        <div class="blog-img-wrapper overflow-hidden rounded-4 bg-light shadow-sm">
+                            <span class="badge bg-dark-main text-white position-absolute top-0 start-0 m-3 z-2 rounded-pill px-3 py-2 shadow pb-1">Traffic</span>
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+                                alt="The 7 Key Elements of a High-Converting Landing Page" class="img-fluid w-100 object-fit-cover transition-all proj-img group-hover-scale"
+                                style="height: 250px;">
+                        </div>
+                        <div class="blog-content bg-white rounded-4 p-4 shadow position-relative border border-light mx-sm-3 mx-2 flex-grow-1 d-flex flex-column"
+                            style="margin-top: -40px; z-index: 2;">
+                            <div class="d-flex align-items-center text-muted small mb-3 fw-medium">
+                                <span class="text-primary">Landing Pages</span>
+                                <i class="bi bi-circle-fill text-warning mx-2" style="font-size: 5px;"></i>
+                                <span>01 Dec, 2025</span>
+                            </div>
+                            <h5 class="fw-bold text-dark-main mb-4 blog-title transition-all d-block">The 7 Key Elements of a High-Converting Landing Page</h5>
+
+                            <div class="d-flex justify-content-end position-relative z-1 mt-auto pt-3 border-top border-light">
+                                <a href="single-blog.html"
+                                    class="text-dark-main fw-bold text-decoration-none small d-flex align-items-center transition-all read-more-text">
+                                    <i class="bi bi-arrow-right me-2 transition-transform"></i> Read Full Article
+                                </a>
+                            </div>
+                            <div class="blog-trim-shape"></div>
+                        </div>
+                    </div>
+</div>
+
+            </div>
+            
+            <!-- Pagination -->
+            <div class="d-flex justify-content-center mt-5 pt-4">
+                <nav aria-label="Blog pagination">
+                    <ul class="pagination pagination-lg gap-2">
+                        <li class="page-item disabled">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm border-0 bg-white text-muted" href="#" style="width: 50px; height: 50px;" tabindex="-1"><i class="bi bi-chevron-left"></i></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm border-0 bg-primary text-white" href="#" style="width: 50px; height: 50px;">1</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm border-0 text-dark-main bg-white hover-bg-primary" href="#" style="width: 50px; height: 50px;">2</a></li>
+                        <li class="page-item"><a class="page-link rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm border-0 text-dark-main bg-white hover-bg-primary" href="#" style="width: 50px; height: 50px;">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm border-0 text-dark-main bg-white hover-bg-primary" href="#" style="width: 50px; height: 50px;"><i class="bi bi-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+<footer
+        class="footer pt-5 pb-4 bg-dark-main position-relative overflow-hidden border-top border-dark border-opacity-10 mt-5">
+        <!-- Giant Background Text -->
+        <h1 class="position-absolute w-100 text-center fw-900 user-select-none"
+            style="font-size: 14vw; opacity: 0.03; top: -5%; left: 0; color: #fff; z-index: 0; font-family: 'Inter', sans-serif; letter-spacing: -3px;">
+            DigitalXPro
+        </h1>
+
+        <div class="container position-relative z-1 pt-4">
+            <div class="row g-4 mb-5">
+                <!-- Newsletter -->
+                <div class="col-lg-4 col-md-6 pe-lg-4">
+                    <h5 class="fw-bold text-white mb-4">Subscribe to Our Newsletter</h5>
+                    <form>
+                        <div
+                            class="input-group mb-3 bg-white bg-opacity-10 p-1 rounded-pill border border-white border-opacity-10 transition-all hover-shadow focus-within-glow">
+                            <input type="email" class="form-control bg-transparent border-0 text-white shadow-none ps-4"
+                                placeholder="Enter email" required>
+                            <button class="btn btn-white text-dark-main bg-white fw-bold rounded-pill px-4 shadow-sm"
+                                type="submit" style="white-space: nowrap;">Subscribe</button>
+                        </div>
+                        <div class="form-check d-flex align-items-center mb-0 mt-3 ps-4">
+                            <input
+                                class="form-check-input bg-transparent border-white border-opacity-25 me-2 mt-0 focus-ring shadow-none cursor-pointer"
+                                type="checkbox" value="" id="privacyCheck" required>
+                            <label class="form-check-label text-white-50 small cursor-pointer" for="privacyCheck">
+                                I agree to the <a href="#"
+                                    class="text-white text-decoration-underline hover-white transition-all">privacy
+                                    policy.</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Company -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-4">Company</h6>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li class="mb-3"><a href="#about"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">About</a>
+                        </li>
+                        <li class="mb-3"><a href="#"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Our
+                                Mission</a></li>
+                        <li class="mb-3"><a href="#blog"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Our
+                                Blogs</a></li>
+                        <li class="mb-3"><a href="#faq"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Help
+                                Center</a></li>
+                        <li class="mb-3"><a href="#"
+                                class="text-white-50 text-decoration-none small transition-all hover-white"
+                                data-bs-toggle="modal" data-bs-target="#quoteModal">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-lg-2 col-md-3 col-6">
+                    <h6 class="fw-bold text-white mb-4">Service</h6>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li class="mb-3"><a href="#services"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Google
+                                Profile</a></li>
+                        <li class="mb-3"><a href="#services"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Google
+                                Ads</a></li>
+                        <li class="mb-3"><a href="#services"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Local
+                                SEO</a></li>
+                        <li class="mb-3"><a href="#services"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Review
+                                Mgmt</a></li>
+                        <li class="mb-3"><a href="#services"
+                                class="text-white-50 text-decoration-none small transition-all hover-white">Lead
+                                Generation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-4 col-md-6 text-white text-md-start">
+                    <div class="mb-4">
+                        <h6 class="text-white fw-bold mb-1">+1 (555) 123-4567</h6>
+                    </div>
+                    <div class="mb-4 mt-2">
+                        <a href="mailto:hello@digitalxpro.com"
+                            class="text-white-50 text-decoration-none small hover-white transition-all">hello@digitalxpro.com</a>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-white-50 small mb-0 lh-lg">123 Growth Ave.<br>New York, NY 10012</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Primary Rounded Block (Replacing Yellow Block) -->
+            <div
+                class="bg-primary rounded-4 p-4 p-md-5 mt-5 shadow-lg position-relative border border-primary border-opacity-50">
+                <!-- Top Half -->
+                <div
+                    class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-4 border-bottom border-white border-opacity-10 gap-3">
+                    <a class="navbar-brand fw-bold fs-4 text-white logo-text d-flex align-items-center" href="#">
+                        <i class="bi bi-hexagon-fill me-2 fs-3 text-white opacity-75"></i>
+                        DigitalXPro
+                    </a>
+                    <div class="d-flex flex-wrap gap-3 gap-md-4 small fw-semibold">
+                        <a href="#"
+                            class="text-white text-decoration-none opacity-75 hover-opacity-100 transition-all">Terms &
+                            Condition</a>
+                        <a href="#"
+                            class="text-white text-decoration-none opacity-75 hover-opacity-100 transition-all">Privacy
+                            Policy</a>
+                        <a href="#"
+                            class="text-white text-decoration-none opacity-75 hover-opacity-100 transition-all">Contact
+                            us</a>
+                    </div>
+                </div>
+                <!-- Bottom Half -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                    <p class="text-white small fw-semibold mb-0 opacity-75">&copy; Copyright 2026 by DigitalXPro |
+                        All Rights Reserved</p>
+                    <div class="d-flex gap-2">
+                        <a href="#"
+                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
+                            style="width: 36px; height: 36px;"><i class="bi bi-facebook small"></i></a>
+                        <a href="#"
+                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
+                            style="width: 36px; height: 36px;"><i class="bi bi-twitter-x small"></i></a>
+                        <a href="#"
+                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
+                            style="width: 36px; height: 36px;"><i class="bi bi-linkedin small"></i></a>
+                        <a href="#"
+                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
+                            style="width: 36px; height: 36px;"><i class="bi bi-youtube small"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <!-- High-Converting Quote Modal -->
+    <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content border-0 rounded-5 shadow-xl overflow-hidden glass-modal">
+                <div class="row g-0 h-100">
+                    <!-- Left Sidebar visual -->
+                    <div
+                        class="col-md-5 bg-gradient-brand text-white p-5 d-none d-md-flex flex-column justify-content-between position-relative overflow-hidden">
+                        <!-- Abstract geometric elements instead of the huge bullseye -->
+                        <div class="position-absolute rounded-circle bg-white" style="width: 300px; height: 300px; top: -100px; right: -150px; pointer-events: none; opacity: 0.05;"></div>
+                        <div class="position-absolute rounded-circle bg-white" style="width: 200px; height: 200px; bottom: -50px; left: -80px; pointer-events: none; opacity: 0.05;"></div>
+
+                        <div class="z-1">
+                            <span
+                                class="badge bg-white bg-opacity-25 text-white mb-4 shadow-sm px-3 py-2 rounded-pill d-inline-flex align-items-center"><i
+                                    class="bi bi-star-fill text-warning me-2"></i> Free Strategy</span>
+                            <h3 class="fw-bold mb-3 font-outfit fs-2 lh-sm">We analyze before we pitch.</h3>
+                            <p class="opacity-75 font-inter small lh-lg">Tell us about your service business. If we
+                                think we can confidently double your booked appointments, we'll design a custom roadmap.
+                            </p>
+
+                            <ul class="list-unstyled mt-5">
+                                <li
+                                    class="mb-3 d-flex align-items-center bg-white bg-opacity-10 rounded-pill px-3 py-2 text-white">
+                                    <i class="bi bi-camera-video text-primary-light me-3 fs-6"></i> <span
+                                        class="small fw-medium">Video Strategy Call</span>
+                                </li>
+                                <li
+                                    class="mb-3 d-flex align-items-center bg-white bg-opacity-10 rounded-pill px-3 py-2 text-white">
+                                    <i class="bi bi-map-fill text-primary-light me-3 fs-6"></i> <span
+                                        class="small fw-medium">90-Day Roadmap</span>
+                                </li>
+                                <li
+                                    class="d-flex align-items-center bg-white bg-opacity-10 rounded-pill px-3 py-2 text-white">
+                                    <i class="bi bi-graph-up-arrow text-primary-light me-3 fs-6"></i> <span
+                                        class="small fw-medium">ROI Projections</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Form Area -->
+                    <div class="col-md-7 p-4 p-lg-5 bg-white">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <h4 class="fw-bolder text-dark-main mb-0 font-outfit fs-4" id="quoteModalLabel">Apply to
+                                Work With Us</h4>
+                            <button type="button"
+                                class="btn-close shadow-none bg-light rounded-circle p-2 transition-all hover-scale"
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <!-- Success Message (Hidden by default) -->
+                        <div id="successMessage" class="d-none flex-column align-items-center justify-content-center text-center h-100 py-3">
+                            <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center mb-4 heartbeat" style="width: 80px; height: 80px;">
+                                <i class="bi bi-check-lg" style="font-size: 3rem;"></i>
+                            </div>
+                            <h3 class="fw-bold text-dark-main font-outfit">Application Received!</h3>
+                            <p class="text-muted mt-2">Thank you! Our strategy team is reviewing your details. We'll be in touch within 24 hours to schedule your strategy call.</p>
+                        </div>
+
+                        <form id="quoteForm">
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-muted ps-3 mb-2">Primary Goal</label>
+                                <div class="dropdown w-100">
+                                    <button class="btn bg-light border-0 rounded-pill px-4 py-3 shadow-none w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="serviceDropdownBtn">
+                                        <span class="text-muted" id="serviceBtnText">Select Core Focus...</span>
+                                        <i class="bi bi-chevron-down ms-2 small text-muted"></i>
+                                    </button>
+                                    <ul class="dropdown-menu w-100 border-0 shadow-lg rounded-4 p-2 mt-2 custom-select-dropdown">
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Google Business Ranking">Google Business Ranking</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Google Ads Campaigns">Google Ads Campaigns</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Review Generation System">Review Generation System</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="Comprehensive SEO Funnel">Comprehensive SEO Funnel</a></li>
+                                    </ul>
+                                    <input type="hidden" id="serviceReq" name="serviceReq" value="">
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold text-muted ps-3 mb-2">Full Name</label>
+                                    <input type="text"
+                                        class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none text-dark-main fw-medium"
+                                        id="userName" placeholder="John Doe">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold text-muted ps-3 mb-2">Work Email</label>
+                                    <input type="email"
+                                        class="form-control bg-light border-0 rounded-pill px-4 py-3 shadow-none text-dark-main fw-medium"
+                                        id="userEmail" placeholder="john@company.com">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label small fw-bold text-muted ps-3 mb-2">Marketing Budget</label>
+                                <div class="dropdown w-100">
+                                    <button class="btn bg-light border-0 rounded-pill px-4 py-3 shadow-none w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="budgetDropdownBtn">
+                                        <span class="text-muted" id="budgetBtnText">Select Budget...</span>
+                                        <i class="bi bi-chevron-down ms-2 small text-muted"></i>
+                                    </button>
+                                    <ul class="dropdown-menu w-100 border-0 shadow-lg rounded-4 p-2 mt-2 custom-select-dropdown">
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="$1k - $3k / month">$1k - $3k / month</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="$3k - $10k / month">$3k - $10k / month</a></li>
+                                        <li><a class="dropdown-item rounded-3 py-2 fw-medium text-secondary" href="#" data-val="$10k+ / month">$10k+ / month</a></li>
+                                    </ul>
+                                    <input type="hidden" id="budgetRange" name="budgetRange" value="">
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <label class="form-label small fw-bold text-muted ps-3 mb-2">Current Biggest Bottleneck?</label>
+                                <textarea class="form-control bg-light border-0 rounded-4 shadow-none p-4 text-dark-main fw-medium" rows="2" placeholder="e.g. Getting traffic but no qualified calls..."></textarea>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-primary w-100 py-3 rounded-pill fw-bold shadow-lg position-relative overflow-hidden group hover-lift transition-all">
+                                <span class="position-relative z-1 d-flex justify-content-center align-items-center">
+                                    Submit Application <i class="bi bi-arrow-right ms-2 transition-transform group-hover-translate-x"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank"
+        class="floating-whatsapp d-flex align-items-center justify-content-center shadow-lg hover-scale z-3 text-decoration-none">
+        <i class="bi bi-whatsapp fs-3 text-white"></i>
+    </a>
+
+    <!-- Lead Notification Toast -->
+    <div class="toast-container position-fixed bottom-0 start-0 p-4 z-3" style="margin-bottom: 70px;">
+        <div id="liveLeadToast" class="toast glass-card border-0 rounded-4 shadow-lg overflow-hidden hide" role="alert"
+            aria-live="assertive" aria-atomic="true" data-bs-delay="5000">
+            <div
+                class="toast-header bg-dark bg-opacity-75 border-bottom border-white border-opacity-10 py-2 px-3 text-white">
+                <i class="bi bi-bell-fill text-primary-light me-2 pulse-dot position-static"
+                    style="width:12px; height:12px; background-color:#25D366; border-radius:50%; margin-top:2px;"></i>
+                <strong class="me-auto fs-6 font-outfit" style="color: white !important;">New Lead Action</strong>
+                <small class="text-white-50">Just now</small>
+                <button type="button" class="btn-close btn-close-white btn-close-sm" data-bs-dismiss="toast"
+                    aria-label="Close"></button>
+            </div>
+            <div class="toast-body bg-white p-3 d-flex align-items-center">
+                <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3"
+                    style="width: 45px; height: 45px;">
+                    <i class="bi bi-person-fill text-primary fs-3"></i>
+                </div>
+                <div>
+                    <h6 class="mb-1 text-dark-main fw-bold" id="toastName">Michael R. (Dentist)</h6>
+                    <p class="mb-0 small text-muted lh-sm" id="toastAction">Just requested a Free Growth Audit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn"
+        class="btn btn-primary rounded-circle shadow-xl position-fixed z-3 d-flex align-items-center justify-content-center"
+        style="bottom: 105px; right: 35px; width: 50px; height: 50px; opacity: 0; visibility: hidden; transition: all 0.3s ease; transform: translateY(20px);">
+        <i class="bi bi-chevron-up fs-4 text-white" style="margin-top: 2px;"></i>
+    </button>
+
+    
+    <!-- Blog Filtering Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterNavs = document.querySelectorAll('.blog-filter-nav .nav-link');
+            const blogCards = document.querySelectorAll('#blogGrid .col-lg-4');
+
+            if (filterNavs.length > 0) {
+                filterNavs.forEach(nav => {
+                    nav.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        
+                        // Reset
+                        filterNavs.forEach(n => {
+                            n.classList.remove('active', 'text-white', 'bg-primary');
+                            n.classList.add('bg-white', 'text-dark-main');
+                        });
+                        
+                        // Set Active
+                        const target = e.target;
+                        target.classList.remove('bg-white', 'text-dark-main');
+                        target.classList.add('active', 'text-white', 'bg-primary');
+
+                        const filterValue = target.innerText.trim();
+
+                        // Filter
+                        blogCards.forEach(card => {
+                            const cat = card.getAttribute('data-category');
+                            if (filterValue === 'All Articles' || cat === filterValue) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
