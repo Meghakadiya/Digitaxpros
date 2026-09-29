@@ -285,170 +285,125 @@
     </section>
 
     <!-- Animated CTA Section (Same as Main) -->
-    <section class="cta-section py-5 bg-dark-main position-relative overflow-hidden text-center text-lg-start">
-        <div class="position-absolute bg-primary rounded-circle opacity-10 float-animation"
-            style="width: 300px; height: 300px; bottom: -50px; right: 10%; filter: blur(60px);"></div>
-        <div class="container position-relative z-1">
-            <div class="bg-white p-5 rounded-5 shadow-lg position-relative overflow-hidden">
+    <section class="cta-section py-5 bg-white position-relative overflow-hidden text-center text-lg-start">
+        <div class="container position-relative z-1" data-aos="zoom-in-up">
+            <div class="bg-dark-main p-4 p-md-5 rounded-5 shadow-lg position-relative overflow-hidden">
+                <div class="position-absolute bg-primary rounded-circle opacity-10 float-animation"
+                    style="width: 300px; height: 300px; bottom: -50px; right: 10%; filter: blur(60px);"></div>
                 <div class="position-absolute top-0 end-0 bg-primary opacity-10 h-100"
                     style="width: 30%; clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);"></div>
                 <div class="row align-items-center position-relative z-2">
                     <div class="col-lg-8 mb-4 mb-lg-0 text-center text-lg-start">
-                        <span class="badge bg-primary text-white rounded-pill px-3 py-2 mb-3 shadow-sm">Ready to
+                        <span class="badge bg-white bg-opacity-25 text-white rounded-pill px-3 py-2 mb-3 shadow-sm">Ready to
                             Grow?</span>
-                        <h2 class="display-6 fw-bold text-dark-main mb-2 font-outfit">Ready to Scale Your Service
-                            Business?</h2>
-                        <p class="text-muted fs-5 mb-0">Stop losing local leads to your competitors. Let's build your
+                        <h2 class="display-5 fw-bold text-white mb-2 font-outfit">Ready to Scale Your Service Business?</h2>
+                        <p class="text-white-50 fs-5 mb-0">Stop losing local leads to your competitors. Let's build your
                             automated growth engine.</p>
                     </div>
                     <div class="col-lg-4 text-center text-lg-end">
                         <button
-                            class="btn btn-dark-main rounded-pill px-5 py-3 fw-bold shadow-lg hover-scale transition-all"
+                            class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow-lg hover-scale transition-all"
                             data-bs-toggle="modal" data-bs-target="#quoteModal">
-                            Book Free Audit <i class="bi bi-arrow-right ms-2 fs-5"></i>
+                            BOOK FREE AUDIT <i class="bi bi-arrow-right ms-2 fs-5"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer
-        class="footer pt-5 pb-4 bg-dark-main position-relative overflow-hidden border-top border-dark border-opacity-10 mt-5">
-        <!-- Giant Background Text -->
-        <h1 class="position-absolute w-100 text-center fw-900 user-select-none"
-            style="font-size: 14vw; opacity: 0.03; top: -5%; left: 0; color: #fff; z-index: 0; font-family: 'Inter', sans-serif; letter-spacing: -3px;">
-            DigitalXPro
-        </h1>
+    <footer class="footer pt-0 pb-4 bg-dark-main text-white position-relative overflow-hidden border-0 mt-0">
+        <!-- White Wave Top Divider -->
+        <div class="position-absolute w-100" style="top: -1px; left: 0; line-height: 0; z-index: 2;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="width: 100%; height: auto; display: block;">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128V0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+            </svg>
+        </div>
 
-        <div class="container position-relative z-1 pt-4">
-            <div class="row g-4 mb-5">
-                <!-- Newsletter -->
-                <div class="col-lg-4 col-md-6 pe-lg-4">
-                    <h5 class="fw-bold text-white mb-4">Subscribe to Our Newsletter</h5>
-                    <form>
-                        <div
-                            class="input-group mb-3 bg-white bg-opacity-10 p-1 rounded-pill border border-white border-opacity-10 transition-all hover-shadow focus-within-glow">
-                            <input type="email" class="form-control bg-transparent border-0 text-white shadow-none ps-4"
-                                placeholder="Enter email" required>
-                            <button class="btn btn-white text-dark-main bg-white fw-bold rounded-pill px-4 shadow-sm"
-                                type="submit" style="white-space: nowrap;">Subscribe</button>
-                        </div>
-                        <div class="form-check d-flex align-items-center mb-0 mt-3 ps-4">
-                            <input
-                                class="form-check-input bg-transparent border-white border-opacity-25 me-2 mt-0 focus-ring shadow-none cursor-pointer"
-                                type="checkbox" value="" id="privacyCheck" required>
-                            <label class="form-check-label text-white-50 small cursor-pointer" for="privacyCheck">
-                                I agree to the <a href="../index.html#"
-                                    class="text-white text-decoration-underline hover-white transition-all">privacy
-                                    policy.</a>
-                            </label>
-                        </div>
-                    </form>
-                </div>
+        <!-- Background Shapes -->
+        <div class="glow-orb" style="width: 400px; height: 400px; background: rgba(37, 211, 102, 0.1); bottom: -100px; right: -100px; z-index: 0;"></div>
+        <div class="glow-orb" style="width: 300px; height: 300px; background: rgba(255, 255, 255, 0.05); top: -50px; left: -50px; z-index: 0;"></div>
+        
+        <!-- Subtle Pattern Overlay -->
+        <div class="position-absolute w-100 h-100" style="top: 0; left: 0; background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.4; z-index: 0;"></div>
 
-                <!-- Company -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <h6 class="fw-bold text-white mb-4">Company</h6>
-                    <ul class="list-unstyled footer-links mb-0">
-                        <li class="mb-3"><a href="../index.html#about"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">About</a>
-                        </li>
-                        <li class="mb-3"><a href="../index.html#"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Our
-                                Mission</a></li>
-                        <li class="mb-3"><a href="../index.html#blog"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Our
-                                Blogs</a></li>
-                        <li class="mb-3"><a href="../index.html#faq"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Help
-                                Center</a></li>
-                        <li class="mb-3"><a href="../index.html#"
-                                class="text-white-50 text-decoration-none small transition-all hover-white"
-                                data-bs-toggle="modal" data-bs-target="#quoteModal">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Services -->
-                <div class="col-lg-2 col-md-3 col-6">
-                    <h6 class="fw-bold text-white mb-4">Service</h6>
-                    <ul class="list-unstyled footer-links mb-0">
-                        <li class="mb-3"><a href="../index.html#services"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Google
-                                Profile</a></li>
-                        <li class="mb-3"><a href="../index.html#services"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Google
-                                Ads</a></li>
-                        <li class="mb-3"><a href="../index.html#services"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Local
-                                SEO</a></li>
-                        <li class="mb-3"><a href="../index.html#services"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Review
-                                Mgmt</a></li>
-                        <li class="mb-3"><a href="../index.html#services"
-                                class="text-white-50 text-decoration-none small transition-all hover-white">Lead
-                                Generation</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-lg-4 col-md-6 text-white text-md-start">
-                    <div class="mb-4">
-                        <h6 class="text-white fw-bold mb-1">+91 8488905688</h6>
-                    </div>
-                    <div class="mb-4 mt-2">
-                        <a href="mailto:hello@digitalxpro.com"
-                            class="text-white-50 text-decoration-none small hover-white transition-all">hello@digitalxpro.com</a>
-                    </div>
-                    <div class="mt-4">
-                        <p class="text-white-50 small mb-0 lh-lg">123 Growth Ave.<br>New York, NY 10012</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bottom Primary Rounded Block (Replacing Yellow Block) -->
-            <div
-                class="bg-primary rounded-4 p-4 p-md-5 mt-5 shadow-lg position-relative border border-primary border-opacity-50">
-                <!-- Top Half -->
-                <div
-                    class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 pb-4 border-bottom border-white border-opacity-10 gap-3">
-                    <a class="navbar-brand fw-bold fs-4 text-white logo-text d-flex align-items-center"
-                        href="../index.html#">
-                        <i class="bi bi-hexagon-fill me-2 fs-3 text-white opacity-75"></i>
+        <div class="container position-relative z-1 pt-5" style="margin-top: 10vw;">
+            <div class="row g-5 mb-5 pb-5 border-bottom border-white border-opacity-10 justify-content-between">
+                <!-- Brand Info -->
+                <div class="col-lg-4 pe-lg-5">
+                    <a class="navbar-brand fw-bold fs-3 text-white logo-text d-flex align-items-center mb-4" href="../index.html">
+                        <i class="bi bi-hexagon-fill me-2 fs-2 text-primary"></i>
                         DigitalXPro
                     </a>
-                    <div class="d-flex flex-wrap gap-3 gap-md-4 small fw-semibold">
-                        <a href="../index.html#"
-                            class="text-white text-decoration-none opacity-75 hover-opacity-100 transition-all">Terms &
-                            Condition</a>
-                        <a href="../index.html#"
-                            class="text-white text-decoration-none opacity-75 hover-opacity-100 transition-all">Privacy
-                            Policy</a>
-                        <a href="../index.html#"
-                            class="text-white text-decoration-none opacity-75 hover-opacity-100 transition-all">Contact
-                            us</a>
+                    <p class="text-white-75 mb-4 small" style="line-height: 1.8;">
+                        Your elite growth partner for local dominance. We build high-converting systems, 
+                        manage reviews, and scale service businesses.
+                    </p>
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <a href="mailto:hello@digitalxpro.com" class="text-white text-decoration-none small transition-all d-flex align-items-center">
+                            <div class="bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 hover-scale hover-bg-primary" style="width: 38px; height: 38px; transition: all 0.3s;">
+                                <i class="bi bi-envelope-fill text-primary" style="transition: color 0.3s;"></i>
+                            </div>
+                            hello@digitalxpro.com
+                        </a>
+                        <span class="text-white text-decoration-none small d-flex align-items-center">
+                            <div class="bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 hover-scale hover-bg-primary" style="width: 38px; height: 38px; transition: all 0.3s;">
+                                <i class="bi bi-telephone-fill text-primary" style="transition: color 0.3s;"></i>
+                            </div>
+                            +91 8488905688
+                        </span>
                     </div>
                 </div>
-                <!-- Bottom Half -->
-                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
-                    <p class="text-white small fw-semibold mb-0 opacity-75">&copy; Copyright 2026 by DigitalXPro |
-                        All Rights Reserved</p>
-                    <div class="d-flex gap-2">
-                        <a href="../index.html#"
-                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
-                            style="width: 36px; height: 36px;"><i class="bi bi-facebook small"></i></a>
-                        <a href="../index.html#"
-                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
-                            style="width: 36px; height: 36px;"><i class="bi bi-twitter-x small"></i></a>
-                        <a href="../index.html#"
-                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
-                            style="width: 36px; height: 36px;"><i class="bi bi-linkedin small"></i></a>
-                        <a href="../index.html#"
-                            class="social-icon text-white bg-white bg-opacity-10 hover-bg-light rounded-circle d-flex align-items-center justify-content-center transition-all"
-                            style="width: 36px; height: 36px;"><i class="bi bi-youtube small"></i></a>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small text-white">Company</h6>
+                    <ul class="list-unstyled footer-links mb-0 gap-3 d-flex flex-column">
+                        <li><a href="../index.html#home" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Home</a></li>
+                        <li><a href="../index.html#about" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> About Us</a></li>
+                        <li><a href="../blog.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Our Blog</a></li>
+                        <li><a href="../contact.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small text-white">SERVICES</h6>
+                    <ul class="list-unstyled footer-links mb-0 gap-3 d-flex flex-column">
+                        <li><a href="google-business-profile.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Google Profile</a></li>
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Local SEO</a></li>
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Google Ads</a></li>
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Review Mgmt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small opacity-0 d-none d-md-block">SERVICES</h6>
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small text-white d-md-none">SERVICES</h6>
+                    <ul class="list-unstyled footer-links mb-0 gap-3 d-flex flex-column">
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Lead Funnels</a></li>
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> Lead Automation</a></li>
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> WhatsApp Bot</a></li>
+                        <li><a href="../services.html" class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i class="bi bi-chevron-right me-2 small text-white"></i> 360 Marketing</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Sub-Footer -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-white-50 small mb-0">&copy; 2026 DigitalXPro. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-end">
+                        <a href="https://facebook.com" target="_blank" class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 36px; height: 36px;"><i class="bi bi-facebook small"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 36px; height: 36px;"><i class="bi bi-instagram small"></i></a>
+                        <a href="https://twitter.com" target="_blank" class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 36px; height: 36px;"><i class="bi bi-twitter-x small"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary" style="width: 36px; height: 36px;"><i class="bi bi-linkedin small"></i></a>
                     </div>
                 </div>
             </div>
-
         </div>
     </footer>
 

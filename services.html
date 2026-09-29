@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalXPro | Our All-Inclusive Services</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .service-flip-card {
+            perspective: 1000px;
+            height: 100%;
+            min-height: 280px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+
+        .service-flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .flip-card-front {
+            background-color: white;
+            z-index: 2;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+            color: white;
+            justify-content: space-between;
+        }
+
+        .flip-card-back p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .flip-card-back .btn-light {
+            font-size: 0.85rem;
+            padding: 0.6rem 2rem;
+            font-weight: 700;
+            background-color: #ffffff !important;
+            border-color: #ffffff !important;
+        }
+
+        .flip-card-back.bg-warning .btn-light {
+            color: #f59e0b !important;
+        }
+
+        .flip-card-back.bg-primary .btn-light {
+            color: #128C7E !important;
+        }
+
+        .flip-card-back.bg-dark-main .btn-light {
+            color: #111 !important;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- Header / Navbar -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top custom-navbar mt-3 mx-lg-auto rounded-pill glass-nav"
+        style="max-width: 1200px; right: 15px; left: 15px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold logo-text" href="index.html#">DigitalX<span
+                    class="text-primary-light">Pro</span></a>
+            <button class="navbar-toggler border-0 focus-ring" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <i class="bi bi-list fs-1 text-primary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a class="nav-link dropdown-toggle active" href="services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <ul
+                            class="dropdown-menu border-0 shadow-lg border-primary border-top border-3 rounded-4 animate-dropdown m-0 mt-2 p-2 glass-dropdown">
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main"
+                                    href="services/google-business-profile.html">Google
+                                    Business Profile</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main"
+                                    href="services.html">Google
+                                    Ads & AdSense</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main"
+                                    href="services.html">Local
+                                    SEO</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main"
+                                    href="services.html">Review
+                                    Management</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="services.html">Lead
+                                    Generation</a></li>
+                            <li><a class="dropdown-item py-2 fw-medium rounded text-dark-main" href="services.html">Lead
+                                    Automation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Results</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#industries">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary rounded-pill px-4 py-2 fw-semibold shadow-sm pulse-btn"
+                    data-bs-toggle="modal" data-bs-target="#quoteModal">Free Audit</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header Section -->
+    <section class="bg-white position-relative overflow-hidden" style="padding-top: 180px; padding-bottom: 120px;">
+        <!-- Animated Background Elements -->
+        <div class="position-absolute top-0 start-0 translate-middle rounded-circle"
+            style="width: 800px; height: 800px; background: radial-gradient(circle, rgba(37,211,102,0.06) 0%, rgba(255,255,255,0) 70%); z-index: 0;">
+        </div>
+        <div class="position-absolute bottom-0 end-0 translate-middle-y rounded-circle"
+            style="width: 1000px; height: 1000px; background: radial-gradient(circle, rgba(37,211,102,0.06) 0%, rgba(255,255,255,0) 70%); z-index: 0;">
+        </div>
+
+        <!-- Floating Animated Dots -->
+        <div class="floating-dot dot-primary animate-float-1" style="top: 20%; left: 15%;"></div>
+        <div class="floating-dot dot-secondary animate-float-2" style="top: 60%; left: 80%;"></div>
+        <div class="floating-dot dot-warning animate-float-3" style="top: 75%; left: 25%;"></div>
+        <div class="floating-dot dot-primary animate-float-2" style="top: 30%; left: 75%;"></div>
+        <div class="floating-dot dot-warning animate-float-1" style="top: 85%; left: 85%;"></div>
+
+        <div class="container position-relative z-1 text-center" data-aos="fade-up">
+            <span
+                class="badge bg-primary-light bg-opacity-25 text-primary rounded-pill px-4 py-2 border border-primary border-opacity-10 mb-4 tracking-wider shadow-sm">
+                <i class="bi bi-star-fill text-warning me-2"></i> Premium Growth Solutions
+            </span>
+            <h1 class="display-3 fw-900 text-dark-main font-outfit mb-4 mx-auto" style="max-width: 900px;">
+                Comprehensive <span class="text-primary">Digital Ecosystems</span>
+            </h1>
+            <p class="text-muted fs-5 mx-auto lh-lg mb-0" style="max-width: 780px;">
+                We provide a full suite of highly-engineered growth channels designed to dominate search rankings,
+                maximize lead flow, and instantly convert traffic into exclusive booked appointments.
+            </p>
+        </div>
+    </section>
+
+    <!-- All Services Grid -->
+    <section class="section-padding bg-light position-relative">
+        <div class="container z-1">
+            <div class="text-center max-w-700 mx-auto mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mt-2 text-dark-main">End-to-End Execution</h2>
+                <p class="text-muted fs-5 fw-light">Discover the elite strategies we implement to scale service-based
+                    businesses nationwide.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-primary bg-opacity-10 rounded-4 shadow-sm text-primary mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-geo-alt-fill fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Google Profile Management</h5>
+                            </div>
+                            <div class="flip-card-back bg-primary">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Google Profile Management</h6>
+                                    <p class="text-white-75">Dominate the Google Map Pack. We optimize your business
+                                        profile, post daily updates, and ensure you rank above local competitors.</p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-primary bg-opacity-10 rounded-4 shadow-sm text-primary mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-google fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Google Ads Management</h5>
+                            </div>
+                            <div class="flip-card-back bg-primary">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Google Ads Management</h6>
+                                    <p class="text-white-75">Stop wasting ad spend. We build highly targeted
+                                        intent-based campaigns that capture prospects actively searching for your
+                                        service.</p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-warning bg-opacity-10 rounded-4 shadow-sm text-warning mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-search fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Local SEO Strategies</h5>
+                            </div>
+                            <div class="flip-card-back bg-warning">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Local SEO Strategies</h6>
+                                    <p class="text-white-75">Establish an unavoidable organic footprint. We build
+                                        localized service pages and backlinks to signal massive authority to Google.</p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-primary bg-opacity-10 rounded-4 shadow-sm text-primary mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-star-fill fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Review Management</h5>
+                            </div>
+                            <div class="flip-card-back bg-primary">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Review Management</h6>
+                                    <p class="text-white-75">Automate your reputation. We implement custom QR flows and
+                                        workflows that capture 5-star reviews while minimizing negative ones.</p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-primary bg-opacity-10 rounded-4 shadow-sm text-primary mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-funnel-fill fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Lead Generation Funnels</h5>
+                            </div>
+                            <div class="flip-card-back bg-primary">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Lead Generation Funnels</h6>
+                                    <p class="text-white-75">Design landing pages entirely prioritized for conversion.
+                                        We turn passing traffic into concrete, pre-qualified, ready-to-buy inquiries.
+                                    </p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-warning bg-opacity-10 rounded-4 shadow-sm text-warning mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-robot fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Lead Automation</h5>
+                            </div>
+                            <div class="flip-card-back bg-warning">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Lead Automation</h6>
+                                    <p class="text-white-75">Instantly engage prospects seconds after they submit a
+                                        form. Use AI scheduling and CRM integration to drastically cut response times.
+                                    </p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: Service 7 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-dark bg-opacity-10 rounded-4 shadow-sm text-dark-main mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-whatsapp fs-2 text-success"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">WhatsApp Automation</h5>
+                            </div>
+                            <div class="flip-card-back bg-dark-main">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">WhatsApp Automation</h6>
+                                    <p class="text-white-75">Deploy powerful WhatsApp chatbots and automated sequences
+                                        to close leads where they spend their time most efficiently.</p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW: Service 8 -->
+                <div class="col-md-6 col-xl-3" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-flip-card w-100">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="icon-box-lg bg-primary bg-opacity-10 rounded-4 shadow-sm text-primary mb-4 d-flex align-items-center justify-content-center"
+                                    style="width: 70px; height: 70px;">
+                                    <i class="bi bi-megaphone-fill fs-2"></i>
+                                </div>
+                                <h5 class="fw-bold mb-0 text-dark-main font-outfit">Comprehensive Marketing</h5>
+                            </div>
+                            <div class="flip-card-back bg-primary">
+                                <div>
+                                    <h6 class="fw-bold mb-3 mt-1">Comprehensive Marketing</h6>
+                                    <p class="text-white-75">A 360-degree approach encompassing content, social proof,
+                                        email outreach, and multi-channel brand positioning logic.</p>
+                                </div>
+                                <a href="services/google-business-profile.html"
+                                    class="btn btn-light rounded-pill w-100 mt-2 hover-scale">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Banner -->
+    <section class="py-5 bg-white position-relative">
+        <div class="container">
+            <div
+                class="bg-gradient-brand text-white p-5 rounded-5 shadow-xl position-relative overflow-hidden text-center text-lg-start">
+                <div class="position-absolute top-0 end-0 bg-white opacity-10 rounded-circle"
+                    style="width: 300px; height: 300px; transform: translate(30%, -30%);"></div>
+                <div class="row align-items-center position-relative z-1">
+                    <div class="col-lg-8 mb-4 mb-lg-0">
+                        <span class="badge bg-white bg-opacity-25 text-white rounded-pill px-3 py-2 mb-3">SCALING
+                            STRATEGY</span>
+                        <h2 class="display-6 fw-bold font-outfit mb-2">Ready to Deploy the Ultimate Growth System?</h2>
+                        <p class="text-white-50 fs-5 mb-0">Book a quick discovery call to discuss how our services stack
+                            can generate high-intent appointments.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <button
+                            class="btn btn-white text-dark-main bg-white fw-bold rounded-pill px-5 py-3 shadow-lg hover-scale transition-all"
+                            data-bs-toggle="modal" data-bs-target="#quoteModal">
+                            Start Growing Now <i class="bi bi-arrow-right ms-2 fs-5"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area (Same as contact.html) -->
+    <footer class="footer pt-0 pb-4 bg-dark-main text-white position-relative overflow-hidden border-0 mt-0">
+        <!-- White Wave Top Divider -->
+        <div class="position-absolute w-100" style="top: -1px; left: 0; line-height: 0; z-index: 2;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                style="width: 100%; height: auto; display: block;">
+                <path fill="#ffffff" fill-opacity="1"
+                    d="M0,96L80,106.7C160,117,320,139,480,128C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128V0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- Background Shapes -->
+        <div class="glow-orb"
+            style="width: 400px; height: 400px; background: rgba(37, 211, 102, 0.1); bottom: -100px; right: -100px; z-index: 0;">
+        </div>
+        <div class="glow-orb"
+            style="width: 300px; height: 300px; background: rgba(255, 255, 255, 0.05); top: -50px; left: -50px; z-index: 0;">
+        </div>
+
+        <!-- Subtle Pattern Overlay -->
+        <div class="position-absolute w-100 h-100"
+            style="top: 0; left: 0; background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.4; z-index: 0;">
+        </div>
+
+        <div class="container position-relative z-1 pt-5" style="margin-top: 10vw;">
+            <div class="row g-5 mb-5 pb-5 border-bottom border-white border-opacity-10 justify-content-between">
+                <!-- Brand Info -->
+                <div class="col-lg-4 pe-lg-5">
+                    <a class="navbar-brand fw-bold fs-3 text-white logo-text d-flex align-items-center mb-4"
+                        href="index.html">
+                        <i class="bi bi-hexagon-fill me-2 fs-2 text-primary"></i>
+                        DigitalXPro
+                    </a>
+                    <p class="text-white-75 mb-4 small" style="line-height: 1.8;">
+                        Your elite growth partner for local dominance. We build high-converting systems,
+                        manage reviews, and scale service businesses.
+                    </p>
+                    <div class="d-flex flex-column gap-3 mb-4">
+                        <a href="mailto:hello@digitalxpro.com"
+                            class="text-white text-decoration-none small transition-all d-flex align-items-center">
+                            <div class="bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 hover-scale hover-bg-primary"
+                                style="width: 38px; height: 38px; transition: all 0.3s;">
+                                <i class="bi bi-envelope-fill text-primary" style="transition: color 0.3s;"></i>
+                            </div>
+                            hello@digitalxpro.com
+                        </a>
+                        <span class="text-white text-decoration-none small d-flex align-items-center">
+                            <div class="bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center me-3 hover-scale hover-bg-primary"
+                                style="width: 38px; height: 38px; transition: all 0.3s;">
+                                <i class="bi bi-telephone-fill text-primary" style="transition: color 0.3s;"></i>
+                            </div>
+                            +91 8488905688
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small text-white">Company</h6>
+                    <ul class="list-unstyled footer-links mb-0 gap-3 d-flex flex-column">
+                        <li><a href="index.html#home"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Home</a></li>
+                        <li><a href="index.html#about"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> About Us</a></li>
+                        <li><a href="blog.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Our Blog</a></li>
+                        <li><a href="contact.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small text-white">SERVICES</h6>
+                    <ul class="list-unstyled footer-links mb-0 gap-3 d-flex flex-column">
+                        <li><a href="services/google-business-profile.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Google Profile</a></li>
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Local SEO</a></li>
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Google Ads</a></li>
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Review Mgmt</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small opacity-0 d-none d-md-block">SERVICES
+                    </h6>
+                    <h6 class="fw-bold mb-4 text-uppercase tracking-wider small text-white d-md-none">SERVICES</h6>
+                    <ul class="list-unstyled footer-links mb-0 gap-3 d-flex flex-column">
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Lead Funnels</a></li>
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> Lead Automation</a></li>
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> WhatsApp Bot</a></li>
+                        <li><a href="services.html"
+                                class="text-white text-decoration-none small transition-all hover-white d-flex align-items-center"><i
+                                    class="bi bi-chevron-right me-2 small text-white"></i> 360 Marketing</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Sub-Footer -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="text-white-50 small mb-0">&copy; 2026 DigitalXPro. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-end">
+                        <a href="https://facebook.com" target="_blank"
+                            class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary"
+                            style="width: 36px; height: 36px;"><i class="bi bi-facebook small"></i></a>
+                        <a href="https://instagram.com" target="_blank"
+                            class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary"
+                            style="width: 36px; height: 36px;"><i class="bi bi-instagram small"></i></a>
+                        <a href="https://twitter.com" target="_blank"
+                            class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary"
+                            style="width: 36px; height: 36px;"><i class="bi bi-twitter-x small"></i></a>
+                        <a href="https://linkedin.com" target="_blank"
+                            class="text-white-50 hover-white bg-white bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center transition-all hover-bg-primary"
+                            style="width: 36px; height: 36px;"><i class="bi bi-linkedin small"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
