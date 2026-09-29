@@ -23,6 +23,24 @@
     --bg-darker: #054c44;
 }
 
+/* ==================================
+   Utility Classes Missing from BS5
+   ================================== */
+.opacity-10 {
+    opacity: 0.1 !important;
+}
+
+.btn-white, .btn.btn-white {
+    background-color: #ffffff !important;
+    color: var(--text-main) !important;
+    border: 1px solid #ffffff !important;
+}
+.btn-white:hover, .btn.btn-white.hover-scale:hover {
+    background-color: #f8f9fa !important;
+    color: var(--primary) !important;
+    border: 1px solid #f8f9fa !important;
+}
+
 
 
 
@@ -104,6 +122,20 @@ h6,
     color: white;
 }
 
+.btn-hover-outline-primary {
+    color: var(--text-main);
+    border: 2px solid #e2e8f0;
+    background-color: var(--bg-main);
+    transition: all 0.3s ease;
+}
+
+.btn-hover-outline-primary:hover,
+.btn-hover-outline-primary:focus {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    background-color: var(--bg-main) !important;
+}
+
 .btn {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -111,6 +143,7 @@ h6,
 .text-gradient {
     background: linear-gradient(90deg, var(--primary-light) 0%, #fff 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -286,21 +319,53 @@ h6,
 
     50% {
         transform: translateY(-15px);
-    }
+}
 
-    100% {
-        transform: translateY(0);
-    }
+100% {
+    transform: translateY(0);
+}
+}
+
+/* Floating Particles (Dots) */
+.floating-dot {
+position: absolute;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+pointer-events: none;
+z-index: 0;
+opacity: 0.6;
+}
+.floating-dot.dot-primary { background-color: var(--primary); box-shadow: 0 0 10px var(--primary); }
+.floating-dot.dot-secondary { background-color: var(--secondary); box-shadow: 0 0 10px var(--secondary); }
+.floating-dot.dot-warning { background-color: #ffc107; box-shadow: 0 0 10px #ffc107; }
+
+.animate-float-1 { animation: float-particle 15s infinite linear; }
+.animate-float-2 { animation: float-particle-reverse 20s infinite linear; }
+.animate-float-3 { animation: float-particle 25s infinite linear reverse; }
+
+@keyframes float-particle {
+0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.5; }
+33% { transform: translateY(-100px) translateX(50px) scale(1.5); opacity: 0.8; }
+66% { transform: translateY(-50px) translateX(100px) scale(0.8); opacity: 0.3; }
+100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.5; }
+}
+
+@keyframes float-particle-reverse {
+0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.5; }
+33% { transform: translateY(100px) translateX(-50px) scale(1.5); opacity: 0.8; }
+66% { transform: translateY(50px) translateX(-100px) scale(0.8); opacity: 0.3; }
+100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.5; }
 }
 
 .pulse-dot {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    background-color: var(--primary-light);
-    border-radius: 50%;
-    box-shadow: 0 0 0 rgba(37, 211, 102, 0.4);
-    animation: pulse 2s infinite;
+display: inline-block;
+width: 8px;
+height: 8px;
+background-color: var(--primary-light);
+border-radius: 50%;
+box-shadow: 0 0 0 rgba(37, 211, 102, 0.4);
+animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
